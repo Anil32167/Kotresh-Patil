@@ -17,3 +17,8 @@ jobs:
 
       - name: Show git version 
         run: git --version
+
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+   
