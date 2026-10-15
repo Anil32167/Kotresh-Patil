@@ -1,0 +1,20 @@
+name: MY First Workflow
+
+on:
+  push:
+    branches: 
+       -main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "hello from Kotresh"
+
+      - name: Show files
+        run: ls -la background
+
+      - name: Show git version
+        run: git --version
+      
